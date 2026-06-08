@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: rk.effect.sizes 0.0.1\n"
+"Report-Msgid-Bugs-To: alfonso.cano@correo.buap.mx\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Effect Sizes"
+msgstr "Tamaños del Efecto"
+
+msgid "Calculate Effect Sizes"
+msgstr "Calcular Tamaños del Efecto"
+
+msgid "Two-Sample Effect Sizes"
+msgstr "Tamaños del Efecto para Dos Muestras"
+
+msgid "Calculates effect sizes for parametric (T-test) and non-parametric (Wilcoxon/Mann-Whitney) two-group comparisons."
+msgstr "Calcula tamaños del efecto para comparaciones paramétricas (Prueba T) y no paramétricas (Wilcoxon/Mann-Whitney) de dos grupos."
+
+msgid "Response Variable (Numeric)"
+msgstr "Variable de Respuesta (Numérica)"
+
+msgid "Grouping Variable (2 levels)"
+msgstr "Variable de Agrupación (2 niveles)"
+
+msgid "Effect Size Method"
+msgstr "Método de Tamaño del Efecto"
+
+msgid "Cohen's d (effsize)"
+msgstr "d de Cohen (effsize)"
+
+msgid "Hedges' g (effsize)"
+msgstr "g de Hedges (effsize)"
+
+msgid "Glass rank biserial (rcompanion)"
+msgstr "Correlación biserial de rangos de Glass (rcompanion)"
+
+msgid "Wilcoxon Effect Size (rstatix)"
+msgstr "Tamaño del efecto de Wilcoxon (rstatix)"
+
+msgid "Save result as"
+msgstr "Guardar resultado como"
+
+msgid "Save as"
+msgstr "Guardar como"
+
+msgid "Variables"
+msgstr "Variables"
+
+msgid "Method"
+msgstr "Método"
+
+msgid "Output"
+msgstr "Salida"
+
+msgid "Multi-Group / ANOVA Effect Sizes"
+msgstr "Tamaños del Efecto Multigrupo / ANOVA"
+
+msgid "Multi-Group Effect Sizes"
+msgstr "Tamaños del Efecto Multigrupo"
+
+msgid "Calculates Eta Squared, anova_stats, and Epsilon-squared for comparing 3 or more groups."
+msgstr "Calcula Eta cuadrado, anova_stats y Épsilon cuadrado para la comparación de 3 o más grupos."
+
+msgid "Response Variable"
+msgstr "Variable de Respuesta"
+
+msgid "Grouping Variable"
+msgstr "Variable de Agrupación"
+
+msgid "Eta Squared (rstatix)"
+msgstr "Eta cuadrado (rstatix)"
+
+msgid "ANOVA Stats (sjstats)"
+msgstr "Estadísticas ANOVA (sjstats)"
+
+msgid "Epsilon-squared (rcompanion)"
+msgstr "Épsilon cuadrado (rcompanion)"
+
+msgid "Repeated Measures Effect Sizes"
+msgstr "Tamaños del Efecto para Medidas Repetidas"
+
+msgid "Repeated Measures Effect Size"
+msgstr "Tamaño del Efecto para Medidas Repetidas"
+
+msgid "Calculates Kendall's W for Friedman tests (repeated measures)."
+msgstr "Calcula la W de Kendall para pruebas de Friedman (medidas repetidas)."
+
+msgid "Response"
+msgstr "Respuesta"
+
+msgid "Condition"
+msgstr "Condición"
+
+msgid "Subject/Block"
+msgstr "Sujeto/Bloque"

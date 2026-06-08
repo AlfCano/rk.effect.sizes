@@ -1,0 +1,117 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="CalculateEffectSizes"
+	id="CalculateEffectSizes_rkward"
+	po_id="CalculateEffectSizes_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.effect.sizes"
+		shortinfo="An RKWard plugin for parametric and non-parametric Effect Size calculations."
+		longinfo="An RKWard plugin for parametric and non-parametric Effect Size calculations."
+		version="0.0.1"
+		releasedate="2026-06-04"
+		url="https://github.com/AlfCano/rk.effect.sizes"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_ClcltEffctSzsMltGrpEffctS"
+			label="Multi-Group Effect Sizes"
+			type="standard"
+			file="plugins/MultiGroupEffectSizes.xml"
+		>
+		</component>
+		<component
+			id="cmp_ClcltEffctSzsRptdMsrsEffS"
+			label="Repeated Measures Effect Sizes"
+			type="standard"
+			file="plugins/RepeatedMeasuresEffectSizes.xml"
+		>
+		</component>
+		<component
+			id="cmp_ClcltEffctSzsClcltEffctSz"
+			label="Calculate Effect Sizes"
+			type="standard"
+			file="plugins/CalculateEffectSizes.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="EffectSizes"
+				label="Effect Sizes"
+			>
+				<entry
+					component="cmp_ClcltEffctSzsMltGrpEffctS"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="EffectSizes"
+				label="Effect Sizes"
+			>
+				<entry
+					component="cmp_ClcltEffctSzsRptdMsrsEffS"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="EffectSizes"
+				label="Effect Sizes"
+			>
+				<entry
+					component="cmp_ClcltEffctSzsClcltEffctSz"
+				/>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>

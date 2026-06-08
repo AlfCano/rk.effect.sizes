@@ -1,0 +1,41 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="RepeatedMeasuresEffectSizes.js" />
+	<help file="RepeatedMeasuresEffectSizes.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Repeated Measures Effect Size">
+		<tabbook>
+			<tab label="Variables" id="tab_Variabls">
+				<row id="row_vrRCSBRCSB">
+					<varselector id="rep_selector" />
+					<column id="clm_vrsltdRCSB">
+						<varslot id="rep_resp" label="Response" source="rep_selector" classes="numeric" required="true" />
+						<varslot id="rep_group" label="Condition" source="rep_selector" required="true" />
+						<varslot id="rep_block" label="Subject/Block" source="rep_selector" required="true" />
+					</column>
+				</row>
+			</tab>
+			<tab label="Output" id="tab_Output">
+				<row id="row_svbjctlSPP">
+					<saveobject label="Save as" checkable="true" checked="true" initial="repeated_effect" id="rep_save_obj" />
+					<preview label="Preview" id="prv_Preview" mode="data" />
+				</row>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>

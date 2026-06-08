@@ -1,0 +1,50 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="CalculateEffectSizes.js" />
+	<help file="CalculateEffectSizes.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Two-Sample Effect Sizes">
+		<tabbook>
+			<tab label="Variables" id="tab_Variabls">
+				<row id="row_vRVNGV2RVN">
+					<varselector id="two_selector" />
+					<column id="clm_vrslRVNGV2">
+						<varslot id="two_resp" label="Response Variable (Numeric)" source="two_selector" classes="numeric" required="true" />
+						<varslot id="two_group" label="Grouping Variable (2 levels)" source="two_selector" required="true" />
+					</column>
+				</row>
+			</tab>
+			<tab label="Method" id="tab_Method">
+				<row id="row_rESMCHGWES">
+					<radio id="two_method" label="Effect Size Method">
+						<option label="Cohen's d (effsize)" value="cohen_d" checked="true" />
+						<option label="Hedges' g (effsize)" value="hedges_g" />
+						<option label="Glass rank biserial (rcompanion)" value="glass_rb" />
+						<option label="Wilcoxon Effect Size (rstatix)" value="wilcox_eff" />
+					</radio>
+				</row>
+			</tab>
+			<tab label="Output" id="tab_Output">
+				<row id="row_svbjctlSPP">
+					<saveobject label="Save result as" checkable="true" checked="true" initial="twosample_effect" id="two_save_obj" />
+					<preview label="Preview" id="prv_Preview" mode="data" />
+				</row>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>

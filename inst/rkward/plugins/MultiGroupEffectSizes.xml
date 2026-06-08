@@ -1,0 +1,49 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="MultiGroupEffectSizes.js" />
+	<help file="MultiGroupEffectSizes.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Multi-Group Effect Sizes">
+		<tabbook>
+			<tab label="Variables" id="tab_Variabls">
+				<row id="row_vrRVGVRVGV">
+					<varselector id="multi_selector" />
+					<column id="clm_vrsltdRVGV">
+						<varslot id="multi_resp" label="Response Variable" source="multi_selector" classes="numeric" required="true" />
+						<varslot id="multi_group" label="Grouping Variable" source="multi_selector" required="true" />
+					</column>
+				</row>
+			</tab>
+			<tab label="Method" id="tab_Method">
+				<row id="row_rMESANOVAS">
+					<radio id="multi_method" label="Method">
+						<option label="Eta Squared (rstatix)" value="eta_sq" checked="true" />
+						<option label="ANOVA Stats (sjstats)" value="anova_stats" />
+						<option label="Epsilon-squared (rcompanion)" value="epsilon_sq" />
+					</radio>
+				</row>
+			</tab>
+			<tab label="Output" id="tab_Output">
+				<row id="row_svbjctlSPP">
+					<saveobject label="Save as" checkable="true" checked="true" initial="multi_effect" id="multi_save_obj" />
+					<preview label="Preview" id="prv_Preview" mode="data" />
+				</row>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>
